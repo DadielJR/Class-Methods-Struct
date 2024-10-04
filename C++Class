@@ -1,0 +1,31 @@
+//---------------------------------------------------------------------------
+#pragma hdrstop
+#pragma argsused
+#include <iostream>
+
+using namespace std;
+
+class Name_Class //The class
+{
+public: //Access specifier
+  int Num; //Attribute
+  string Name_string; //Attribute
+};
+
+int main(int argc, char* argv[])
+{
+Name_Class My_Obj; // Create an object of Name_Class
+
+//Attributes and set values
+My_Obj.Num = 35;
+My_Obj.Name_string = "Demo Code";
+
+//Print values
+cout<<My_Obj.Num<<"\n";
+cout<<My_Obj.Name_string<<"\n";
+
+getchar();
+
+  return 0;
+}
+//---------------------------------------------------------------------------
