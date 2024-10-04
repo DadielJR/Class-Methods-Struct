@@ -1,0 +1,40 @@
+//---------------------------------------------------------------------------
+#pragma hdrstop
+//---------------------------------------------------------------------------
+#pragma argsused
+#include <iostream>
+
+using namespace std;
+
+class Phone{
+  public: //Access specifier
+    string brand; //Attribute
+    string model; //Attribute
+    int year; //Attribute
+    Phone(string a, string b, int c); //Constructor declaration
+};
+
+  //Constructor definition Outside Class
+  Phone::Phone(string a, string b, int c)
+    {
+    brand = a;
+    model = b;
+    year = c;
+    }
+
+int main(int argc, char* argv[])
+{
+  //Create Phone objects and call the constructor with different values
+
+  Phone PhoneObj1("iPhone", "ProMax", 2022);
+  Phone PhoneObj2("Samsung", "Galaxy", 2023);
+
+  //Print values
+
+  cout<<PhoneObj1.brand<<" "<<PhoneObj1.model<<" "<<PhoneObj1.year<<endl;
+  cout<<PhoneObj2.brand<<" "<<PhoneObj2.model<<" "<<PhoneObj2.year<<endl;
+
+  getchar();
+  return 0;
+}
+//---------------------------------------------------------------------------
