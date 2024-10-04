@@ -1,0 +1,30 @@
+//---------------------------------------------------------------------------
+#pragma hdrstop
+#pragma argsused
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+class My_Class{
+  public: //public access specifier
+    int a; //public attribute
+  private: //private access specifier
+    int b; //private attribute
+};
+
+int main(int argc, char* argv[])
+{
+  My_Class MyObj;
+    MyObj.a = 425; //Able to view it (a is public)
+    MyObj.b = 525; //Not allowed to view it (b is private)
+
+  getchar();
+  return 0;
+}
+//---------------------------------------------------------------------------
+
+ //There would be an error message displayed on the console output
+ //since b has private attribute and cannot be accessible.
+
+//---------------------------------------------------------------------------
