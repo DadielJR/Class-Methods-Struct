@@ -1,0 +1,48 @@
+//---------------------------------------------------------------------------
+#pragma hdrstop
+#pragma argsused
+#include <stdio.h>
+#include <iostream>
+
+//INSIDE CLASS DEFINITION
+using namespace std;
+
+/*class My_Class{
+  //The Class
+  public://Acess Identifier
+    void My_Method(){ //Method (Function)
+    cout<<"Mishkagham";
+    }
+  };
+
+int main(int argc, char* argv[])
+{
+  My_Class myObj; //Create an object of MyClass
+  myObj.My_Method(); //Call the Method
+
+  getchar();
+  return 0;
+}                                                                   */
+//---------------------------------------------------------------------------
+
+
+//OUTSIDE CLASS DEFINITION (Note:the class definitions for inside and outside differs)
+
+class my_Klass{
+  public: //Acess Identifier
+    void my_method(); //Method/Function declaration
+  };
+
+  //Method of function definition outside the class
+  void my_Klass::my_method(){
+    cout<<"Dyem Dadiel!";
+    }
+
+int main(int argc, char* argv[])
+{
+  my_Klass myObject; //Create an object of my_Klass
+  myObject.my_method(); //Call the method
+
+  getchar();
+  return 0;
+}
