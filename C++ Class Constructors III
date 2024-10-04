@@ -1,0 +1,40 @@
+//---------------------------------------------------------------------------
+#include <iostream>
+#include<string>
+
+using namespace std;
+
+//Base Class
+class Taiyo_Departments
+  {
+   public:
+    string Department1;
+    string Department2;
+    string Department3;
+    string Department4;
+    Taiyo_Departments(string a, string b, string c, string d);
+  };
+  //Not neccessary but try Constructor outside class first
+
+Taiyo_Departments::Taiyo_Departments(string a, string b, string c, string d)
+  {
+   Department1 = a;
+   Department2 = b;
+   Department3 = c;
+   Department4 = d;
+  }
+
+int main(int argc, char* argv[])
+{
+  //Create department as objects and call constructor with different
+  Taiyo_Departments Division1("Systems Engineering", "Rotating Machinery", "Productions", "Quality Assurance");
+  Taiyo_Departments Division2("Maintenance", "General Affairs", "Materials", "Sales");
+
+  //Lets print the values
+  cout<<Division1.Department1<<", "<<Division1.Department2<<", "<<Division1.Department3<<", "<<Division1.Department4<<endl;
+  cout<<Division2.Department1<<", "<<Division2.Department2<<", "<<Division2.Department3<<", "<<Division2.Department4<<endl;
+
+  getchar();
+  return 0;
+}
+//----------------------------------------------------------------------------
