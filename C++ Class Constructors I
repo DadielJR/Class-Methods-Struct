@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+class Dadiel{
+  public:
+    Dadiel()
+      {
+      cout<< "Renesas Software";
+      }
+};
+
+int main(int argc, char* argv[])
+{
+  Dadiel My_Construction;
+  getchar();
+  return 0;
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
